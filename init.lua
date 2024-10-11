@@ -209,7 +209,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- https://github.com/KhronosGroup/glslang/blob/main/README.md#execution-of-standalone-wrapper
 --
 vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
-  pattern = { '*.vert', '*.tesc', '*.tese', '*.geom', '*.frag' }, -- '*.comp' is too generic IMO
+  pattern = { '*.vert', '*.tesc', '*.tese', '*.geom', '*.frag', '*.comp' },
   command = 'setfiletype glsl',
 })
 
